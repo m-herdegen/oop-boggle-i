@@ -1,5 +1,4 @@
 import random 
-from pprint import pprint
 
 class BoggleBoard:
 
@@ -32,7 +31,8 @@ class BoggleBoard:
       else:
         board += new_letter + '  ' 
     board += '\n'
-    print(*board)
+    # print(*board)
+    print('{:}'.format(board))
 
 board_new = BoggleBoard()
 board_new.shake()
